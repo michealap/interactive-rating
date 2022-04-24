@@ -98,7 +98,7 @@ button {
   color: var(--white);
 }
 
-.rating-btn.active {
+.active {
   background: var(--medium-grey);
   color: #fff;
 }
@@ -121,6 +121,10 @@ button {
 .submit-btn:hover {
   background: #fff;
   color: var(--orange);
+}
+
+.submit-btn:active {
+  transform: scale(0.97);
 }
 
 .thank-you-card {
@@ -157,4 +161,22 @@ button {
 
 .hidden {
   display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  .rating-card {
+    padding: 3rem 2rem;
+  }
+
+  .thank-you-card {
+    padding: 4rem 2rem 5rem;
+  }
 }

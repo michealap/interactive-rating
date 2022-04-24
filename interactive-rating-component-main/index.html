@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
-
+    <script src="./script.js" defer></script>
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
@@ -49,9 +49,11 @@
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
-      <div class="thank-you-card">
+      <div class="thank-you-card hidden">
         <img src="images/illustration-thank-you.svg" alt="" />
-        <p class="selection">You selected <span id="rating"></span> out of 5</p>
+        <p class="selection">
+          You selected <span id="selectedRating"></span> out of 5
+        </p>
         <h3 class="title">Thank you!</h3>
         <p>
           We appreciate you taking the time to give a rating. If you ever need
