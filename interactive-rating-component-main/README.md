@@ -28,13 +28,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./rating.jpg)
-![](./thank-you.jpg)
+![Rating](https://github.com/michealap/interactive-rating/blob/main/interactive-rating-component-main/rating.png?raw=true)
+![Thank You](https://github.com/michealap/interactive-rating/blob/main/interactive-rating-component-main/thank-you.png?raw=true)
 
 ### Links
 
-- Solution URL: ![](https://github.com/michealap/interactive-rating/tree/main/interactive-rating-component-main)
-- Live Site URL: ![](https://interactive-rating-score.netlify.app/)
+- [Solution](https://github.com/michealap/interactive-rating/tree/main/interactive-rating-component-main)
+- [Live Site](https://interactive-rating-score.netlify.app/)
 
 ## My process
 
