@@ -6,11 +6,6 @@ const submitBtn = document.querySelector('.submit-btn');
 
 let selectedRating = null;
 
-submitBtn.addEventListener('click', handleSubmit);
-ratingBtns.forEach((btn) => {
-  btn.addEventListener('click', handleRating);
-});
-
 function handleSubmit() {
   if (!selectedRating) {
     return alert("Please select a rating.");
@@ -24,8 +19,13 @@ function handleRating({ target }) {
   ratingBtns.forEach((btn) => {
     btn.classList.remove('active');
   });
-
+  
   target.classList.add('active');
-
-  selectedRating = event.target.textContent;
+  
+  selectedRating = target.textContent;
 }
+
+submitBtn.addEventListener('click', handleSubmit);
+ratingBtns.forEach((btn) => {
+  btn.addEventListener('click', handleRating);
+});
