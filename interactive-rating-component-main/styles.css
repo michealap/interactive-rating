@@ -124,7 +124,7 @@ button {
 }
 
 .submit-btn:active {
-  transform: scale(0.97);
+  transform: scale(0.9);
 }
 
 .thank-you-card {
@@ -135,6 +135,10 @@ button {
   text-align: center;
   align-items: center;
   border-radius: 2rem;
+  transform: scale(0);
+  opacity: 0;
+  animation: fadeIn 700ms ease forwards;
+  animation-delay: 100ms;
 }
 
 .thank-you-card img {
@@ -169,6 +173,18 @@ button {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 375px) {
